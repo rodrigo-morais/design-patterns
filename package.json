@@ -1,0 +1,36 @@
+{
+  "name": "design-patterns",
+  "version": "0.1.0",
+  "description": "Website explaining about design patterns.",
+  "homepage": "https://github.com/rodrigo-morais/design-patterns",
+  "main": "./index.html",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rodrigo-morais/design-patterns.git"
+  },
+  "keywords": [
+    "design",
+    "patterns"
+  ],
+  "author": "Rodrigo Morais",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rodrigo-morais/design-patterns/issues"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-babel": "^4.0.0",
+    "grunt-cli": "~0.1.13",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-concat": "*",
+    "grunt-contrib-copy": "^0.7.0",
+    "grunt-contrib-jshint": "~0.11.0",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-watch": "~0.6.1",
+    "load-grunt-tasks": "~3.1.0",
+    "time-grunt": "~1.0.0"
+  }
+}

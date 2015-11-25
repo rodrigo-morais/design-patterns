@@ -59,3 +59,19 @@ pre
     margin: 1% 0 0 2%!important;
     padding: 1%!important;
 }
+
+.description
+{
+    margin: 5% 0 0 5%;
+}
+
+.description h3
+{
+    margin-left: 3%;
+}
+
+.description ul
+{
+    list-style: circle;
+    font-size: 1.3em;
+}

@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon"> 
+        <link rel="stylesheet" href="../../../assets/css/style.css">
+        <link rel="stylesheet" type="text/css" href="../../../vendor/bootstrap/dist/css/bootstrap.min.css">
+    </head>
+    <body>
+        <header>
+            <h1>Design Patterns - Observer</h1>
+        </header>
+        <main>
+            <section class="internal">
+                <h3>Pattern Name</h3>
+                <p>
+                    Observer
+                </p>
+                <h3>Description</h3>
+                <p>
+                    Define an one-to-many dependency between objects so that when one object changes state, all its  dependents are notified and updated automatically.
+
+                    A more simple way to explain it is to say that Observer pattern is just the Publish / Subscribe relationship, so we have one publisher or subject, and one or more subscribers or observers. Each subscriber has to subscribe to a publisher, and observe it. When a publisher publish something, all observers will receive the message.
+
+                    It is like a Twitter. When you start to follow some one you will become a subscriber, and the followed is the publisher. If this person publish something, you and all other subscribers will receive the publication.
+                </p>
+                <h3>Problem</h3>
+                <p>
+                    The problem is to send a message to an innumerable number of objects. The object which send the message don't know how much objects are, and who they are. Beyond that is necessary doesn't have a relationship among publisher and subscribers, the coupling has to be weak.
+                </p>
+                <h3>Solution</h3>
+                <p>
+                    The solution is to create a publisher which sends a message to a collections of subscribers which subscribed to receive it. The publisher don't knows who are the subscribers, and the subscribers can unsubscribe to receive the message in any moment.
+                </p>
+                <h3>Consequences</h3>
+                <ul>
+                    <li>
+                        publisher can never send a message, and the subscribers can wait for that in vain;
+                    </li>
+                    <li>
+                        publisher can send the same message repeatedly, and subscriber has to deal for that;
+                    </li>
+                    <li>
+                        publisher can send messages very quickly, and subscriber has to be prepared to that;
+                    </li>
+                    <li>
+                        publisher can have a strong coupling with subscribers because of the subscription process, and it can avoid the Garbage Collection remove old objects from memory;
+                    </li>
+                </ul>
+            </section>
+
+            <section class="description">
+                <h3>Examples</h3>
+                <p>
+                    <ul>
+                        <li>
+                            C#
+                        </li>
+                    </ul>
+                </p>
+            </section>
+        </main>
+    </body>
+</html>

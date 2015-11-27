@@ -35,7 +35,7 @@ p
     float: left;
     clear: both;
     width: 90%;
-    margin: 0 5% 0 5%!important;
+    margin: 0 5% 0 5%;
     font-size: 1.3em;
 }
 
@@ -65,13 +65,25 @@ pre
     margin: 5% 0 0 5%;
 }
 
-.description h3
+.description h3,
+.internal h3
 {
     margin-left: 3%;
 }
 
-.description ul
+.description ul,
+.internal ul
 {
     list-style: circle;
     font-size: 1.3em;
+}
+
+.internal ul
+{
+    margin-left: 3%;
+}
+
+.internal p
+{
+    margin: 2% 5% 2% 5%!important;
 }

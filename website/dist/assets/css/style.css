@@ -29,13 +29,13 @@ ul h2
     margin: 5px;
 }
 
-p
+p.principal
 {
     position: relative;
     float: left;
     clear: both;
     width: 90%;
-    margin: 0 5% 0 5%;
+    margin: 0 3% 0 3%!important;
     font-size: 1.3em;
 }
 
@@ -56,13 +56,23 @@ pre
     float: left;
     clear: left;
     width: 45%;
-    margin: 1% 0 0 2%!important;
+    margin: 1% 0 0 2%;
     padding: 1%!important;
 }
 
 .description
 {
     margin: 5% 0 0 5%;
+}
+
+.description h2,
+.description h3,
+.description p,
+.description ul
+{
+    position: relative;
+    float: left;
+    clear: both;
 }
 
 .description h3,

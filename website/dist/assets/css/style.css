@@ -65,10 +65,7 @@ pre
     margin: 5% 0 0 5%;
 }
 
-.description h2,
-.description h3,
-.description p,
-.description ul
+.description *
 {
     position: relative;
     float: left;

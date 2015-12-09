@@ -9,9 +9,9 @@ namespace design_patterns.observer
     public class Observer
     {
         private string name = "";
-        private decimal value = 0;
+        private double value = 0;
 
-        public Observer(string name, decimal value)
+        public Observer(string name, double value)
         {
             this.name = name;
             this.value = value;
@@ -19,7 +19,7 @@ namespace design_patterns.observer
 
         public void notify()
         {
-            Console.WriteLine(this.name + " - " + this.value);
+            Console.WriteLine(this.name + " - " + this.value.ToString());
         }
     }
 }

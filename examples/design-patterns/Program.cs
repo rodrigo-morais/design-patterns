@@ -5,6 +5,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using design_patterns.observer;
+using design_patterns.proxy;
 
 namespace design_patterns
 {
@@ -46,6 +47,16 @@ namespace design_patterns
             }
 
             subscriber.update();
+        }
+
+        public static void proxy()
+        {
+            var sumProxy = new MathProxy(Operations.SUM);
+            var subProxy = new MathProxy(Operations.SUBTRACTION);
+
+
+            Console.WriteLine("Sum 3 + 8: {0}", sumProxy.calc(3, 8));
+            Console.WriteLine("Subtraction 13 + 8: {0}", subProxy.calc(13, 8));
         }
     }
 }

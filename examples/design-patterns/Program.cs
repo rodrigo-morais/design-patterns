@@ -51,12 +51,11 @@ namespace design_patterns
 
         public static void proxy()
         {
-            var sumProxy = new MathProxy(Operations.SUM);
-            var subProxy = new MathProxy(Operations.SUBTRACTION);
+            var mathProxy = new MathProxy();
 
 
-            Console.WriteLine("Sum 3 + 8: {0}", sumProxy.calc(3, 8));
-            Console.WriteLine("Subtraction 13 + 8: {0}", subProxy.calc(13, 8));
+            Console.WriteLine("Sum 3 + 8: {0}", mathProxy.sum(3, 8));
+            Console.WriteLine("Subtraction 13 + 8: {0}", mathProxy.subtraction(13, 8));
         }
     }
 }

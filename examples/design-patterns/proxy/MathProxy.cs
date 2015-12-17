@@ -8,21 +8,21 @@ namespace design_patterns.proxy
 {
     public class MathProxy
     {
-        Operations operation;
-        Math math = new Math();
+        Math math = null;
 
-        public MathProxy(Operations operation) { this.operation = operation; }
-
-        public int calc(int a, int b)
+        private Math createMath()
         {
-            if (this.operation == Operations.SUM)
-            {
-                return math.sum(a, b);
-            }
-            else
-            {
-                return math.subtraction(a, b);
-            }
+            Console.WriteLine("Creating Math object.");
+            return new Math();
+        }
+
+        public int sum(int a, int b) { 
+            math = math == null ? createMath() : math;
+            return math.sum(a, b); 
+        }
+        public int subtraction(int a, int b) {
+            math = math == null ? createMath() : math;
+            return math.subtraction(a, b);
         }
     
     }

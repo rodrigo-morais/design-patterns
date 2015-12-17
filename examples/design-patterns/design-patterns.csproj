@@ -47,7 +47,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="proxy\Math.cs" />
     <Compile Include="proxy\MathProxy.cs" />
-    <Compile Include="proxy\Operations.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

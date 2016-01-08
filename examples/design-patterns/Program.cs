@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using System.Text;
-using design_patterns.iterator;
+using design_patterns.iterato;
 using design_patterns.observer;
 using design_patterns.proxy;
 
@@ -60,13 +60,23 @@ namespace design_patterns
 
         public static void iterator()
         {
-            var task = new Task();
+            var tasks = new Tasks();
+            var iterator = tasks.GetIterator();
+            var item = "";
 
+            tasks[0] = "Wake up";
+            tasks[1] = "Take a shower";
+            tasks[2] = "Take a bus";
+            tasks[3] = "Work";
+            tasks[4] = "Have lunch";
+            tasks[5] = "Go home";
 
-            while (task.hasNext())
+            item = iterator.FirstItem;
+
+            while (!iterator.IsDone)
             {
-                task = task.next();
-                Console.WriteLine(task.Value());
+                Console.WriteLine(item);
+                item = iterator.NextItem;
             }
         }
     }

@@ -41,6 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="iterato\IAggregate.cs" />
+    <Compile Include="iterato\IIterator.cs" />
+    <Compile Include="iterato\Iterator.cs" />
+    <Compile Include="iterato\Tasks.cs" />
     <Compile Include="observer\Observer.cs" />
     <Compile Include="observer\Subscriber.cs" />
     <Compile Include="Program.cs" />
